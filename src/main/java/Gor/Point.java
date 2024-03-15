@@ -5,22 +5,11 @@ public class Point {
     int y;
 
     //конструктор создал
-public Point(int x, int y){
-    this.x=x;
-    this.y=y;
-
-
+public Point(int x, int y) {
+    this.x = x;
+    this.y = y;
 }
-
-    private String Prop() {
+    public String toString() {
         return "{"+x+":"+y+"}";
     }
-
 }
-
-
-
-
-
-
-
