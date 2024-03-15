@@ -1,6 +1,6 @@
 package Gor;
 
-public class Line {
+class Line {
     Point start;
     Point finish;
 
@@ -21,7 +21,8 @@ public class Line {
         int catetTwo=start.y-finish.y;
         return Math.sqrt(catetTwo*catetOne+catetTwo*catetOne);
     }
-    public String Prop(){
+    public String toString(){
+
         return "Line start" + start +"Line over" + finish;
     }
 
