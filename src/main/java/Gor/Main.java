@@ -10,8 +10,14 @@ public class Main {
         Point two = new Point(1, 3);
         Point three = new Point(5, 8);
 
+        System.out.println(one);
+        System.out.println(two);
+        System.out.println(three);
+        System.out.println("Сравнение точек:");
         System.out.println(one==two);
         System.out.println(three==two);
+        System.out.println("Выводим линию");
+
 
 
         Line lineOne = new Line(1, 3, 5, 8);
@@ -26,20 +32,13 @@ public class Main {
 
         PolyLine poly = new PolyLine(new Point(1, 5), new Point(2, 8), new Point(5, 3), new Point(8, 9));
         double polyLenght = poly.lenght();
-        Line[] lines = poly.lineArray();
+        Line[] lines = poly.tolineArray();
         double lineLenght = 0;
-        for (int i = 0; i < lineLenght; i++) {
+        for (int i = 1; i < lineLenght; i++) {
             lineLenght += lines[i].lenght();
         }
         System.out.println(polyLenght == lineLenght);
         poly.points[1].x = 12;
+
     }
 }
-
-
-
-
-
-
-
-
